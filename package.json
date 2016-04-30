@@ -1,0 +1,28 @@
+{
+  "name": "regex-input-string",
+  "version": "1.0.0",
+  "description": "Augment a user-input string into a regular expression.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --presets es2015,stage-0 --out-dir lib",
+    "watch": "npm run compile -- --watch",
+    "start": "npm run watch",
+    "prepublish": "npm run compile"
+  },
+  "keywords": [
+    "regex",
+    "regexp",
+    "user",
+    "input",
+    "string",
+    "auto",
+    "detect"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
